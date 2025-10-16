@@ -3,8 +3,8 @@
 **Project:** Indian Navy Innovation Exhibition Film
 **Venue:** Manekshaw Centre, New Delhi
 **Dates:** 25-26 November 2025
-**Last Updated:** 2025-10-17 01:55 IST
-**Session Status:** SWITCHING TO WAN 2.2 - Download 3.5GB / 14GB (25%)
+**Last Updated:** 2025-10-17 03:40 IST
+**Session Status:** READY FOR 4-GPU MACHINE - Wan 2.2 A14B model downloaded (118GB), requires 4 GPUs
 
 ---
 
