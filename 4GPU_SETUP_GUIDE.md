@@ -68,42 +68,38 @@
   GPUs: 4
   ```
 
-### Phase 4: Copy AI Models from Current Machine (2-3 hours)
-**IMPORTANT:** Transfer models from current 2-GPU machine to avoid re-downloading 118GB!
+### Phase 4: Download AI Models (2-3 hours)
+**Strategy:** Fresh download from HuggingFace - no physical transfer needed!
 
-#### Option A: Network Transfer (if machines on same network)
-- [ ] **4.1** On current machine, compress models:
-  ```bash
-  cd "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline"
-  tar -czf wan22_models.tar.gz models/wan22/ models/cogvideox-5b/ models/xtts-v2/ models/musicgen-small/
-  ```
-- [ ] **4.2** Transfer via rsync (replace <NEW_PC_IP> with actual IP):
-  ```bash
-  rsync -avz --progress wan22_models.tar.gz gogi@<NEW_PC_IP>:~/Desktop/
-  ```
-- [ ] **4.3** On new machine, extract:
+- [ ] **4.1** Create models directory:
   ```bash
   cd ~/Desktop/Swavlamban\ 2025/swav_offline_pipeline
-  tar -xzf ~/Desktop/wan22_models.tar.gz
+  mkdir -p models
   ```
-
-#### Option B: USB Drive Transfer (if no network)
-- [ ] **4.1** On current machine, copy to USB:
+- [ ] **4.2** Download Wan 2.2 A14B (118GB, ~2-3 hours):
   ```bash
-  cp -r "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/models" /media/gogi/USB_DRIVE/
-  ```
-- [ ] **4.2** On new machine, copy from USB:
-  ```bash
-  cp -r /media/gogi/USB_DRIVE/models ~/Desktop/Swavlamban\ 2025/swav_offline_pipeline/
-  ```
-
-#### Option C: Re-download from scratch (if transfer fails)
-- [ ] **4.3** Download Wan 2.2 A14B (118GB, ~2-3 hours):
-  ```bash
-  cd ~/Desktop/Swavlamban\ 2025/swav_offline_pipeline
   conda activate swav_offline
   huggingface-cli download Wan-AI/Wan2.2-T2V-A14B --local-dir models/wan22 --local-dir-use-symlinks False
   ```
+  **Tip:** Run in background with `nohup` and monitor with `tail -f nohup.out`:
+  ```bash
+  nohup huggingface-cli download Wan-AI/Wan2.2-T2V-A14B --local-dir models/wan22 --local-dir-use-symlinks False > wan22_download.log 2>&1 &
+
+  # Monitor progress
+  watch -n 30 "du -sh models/wan22 && tail -20 wan22_download.log"
+  ```
+- [ ] **4.3** Verify download complete (should be ~118GB):
+  ```bash
+  du -sh models/wan22
+  ls -lh models/wan22/
+  ```
+  Expected files:
+  - `high_noise_model/` (6 safetensors shards)
+  - `low_noise_model/` (6 safetensors shards)
+  - `models_t5_umt5-xxl-enc-bf16.pth` (11GB)
+  - `Wan2.1_VAE.pth` (485MB)
+  - `configuration.json`
+  - `google/umt5-xxl/` (tokenizer)
 
 ### Phase 5: Clone Wan 2.2 Inference Code (2 minutes)
 - [ ] **5.1** Clone Wan 2.2 repository:
@@ -286,12 +282,14 @@ export NCCL_TIMEOUT=1800  # 30 minutes
 | System Verification | 5 min | ⏸️ Pending |
 | Clone Repository | 5 min | ⏸️ Pending |
 | Create Conda Environment | 15 min | ⏸️ Pending |
-| Copy Models from Current PC | 30 min - 3 hrs | ⏸️ Pending |
+| Download AI Models | 2-3 hrs | ⏸️ Pending |
 | Clone Wan 2.2 Inference | 2 min | ⏸️ Pending |
 | Test 4-GPU Rendering | 15 min | ⏸️ Pending |
 | Create Production Script | 5 min | ⏸️ Pending |
 | Verify Everything | 5 min | ⏸️ Pending |
-| **TOTAL SETUP TIME** | **45 min - 4 hrs** | ⏸️ Pending |
+| **TOTAL SETUP TIME** | **2.5 - 3.5 hrs** | ⏸️ Pending |
+
+**Note:** Model download (118GB) is the longest step. Can start overnight and continue setup in the morning.
 
 ---
 
