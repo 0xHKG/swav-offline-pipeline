@@ -101,13 +101,24 @@ Automated offline video production pipeline for generating a 54-shot exhibition 
 ### Total Shots: **54**
 ### Total Scenes: **15**
 
-#### V2 YAML Structure (Recommended)
-- **Format:** ID-based (`r001`, `r002`, etc.)
+#### ✅ V2 YAML Structure (RECOMMENDED - USE THIS)
+- **Format:** ID-based (`r001`, `r002`, `r003` etc.)
+- **File:** `storyboard.swav2025v2.yaml` (292 lines)
+- **Advantages over V1:**
+  - ✅ More detailed cinematographic cues ("Black to Indian Navy crest over Tricolour; slow fade...")
+  - ✅ Specific visual instructions ("Split screen", "Close cuts", "Console view")
+  - ✅ Technical shot descriptions ("Spectrogram before/after", "3‑D Forward Looking Sonar")
+  - ✅ Better AI generation guidance with concrete visual references
+  - ✅ Same narration quality as V1
 - **Methods:**
   - `t2v` (text-to-video) - SDXL generates still, then animated
   - `img2vid` - Stable Video Diffusion animates from base frame
   - `raw` - Process existing footage files
-- **File:** `storyboard.swav2025v2.yaml` (292 lines)
+
+#### V1 YAML Structure (Fallback)
+- **Format:** Row-based (`row_no: 1`, `row_no: 2`, etc.)
+- **File:** `storyboard.swav2025.yaml` (398 lines)
+- **Note:** Simpler prompts, less cinematically specific
 
 #### Scenes Breakdown:
 1. **Opening** (5 shots) - Event intro, NIIO overview
