@@ -48,15 +48,13 @@ def render_t2v(shot, width, height, fps, out_path):
         height=height
     ).images[0]
 
-    # Apply Ken Burns effect
+    # Apply Ken Burns effect and save directly
     duration = shot['duration_s']
-    frames = video_utils.kenburns_from_still(image, width, height, fps, duration)
+    video_utils.kenburns_from_still(image, out_path, duration, fps, size=(width, height))
 
     # Add overlay text if present
     if shot.get('overlay_text'):
-        frames = video_utils.overlay_texts(frames, shot['overlay_text'], width, height, fps)
-
-    video_utils.write_video(frames, out_path, fps)
+        video_utils.overlay_texts(out_path, shot['overlay_text'])
     console.print(f"[green]✓ {shot['id']} rendered to {out_path}[/green]")
 
 def render_img2vid(shot, width, height, fps, out_path):
@@ -86,15 +84,15 @@ def render_img2vid(shot, width, height, fps, out_path):
         noise_aug_strength=0.02
     ).frames[0]
 
-    # Extend to desired duration
-    duration = shot['duration_s']
-    target_frames = int(duration * fps)
-    frames = video_utils.extend_frames(result, target_frames)
+    # Convert PIL images to numpy array
+    frames = np.array([np.array(frame) for frame in result])
 
-    if shot.get('overlay_text'):
-        frames = video_utils.overlay_texts(frames, shot['overlay_text'], width, height, fps)
-
+    # Write video
     video_utils.write_video(frames, out_path, fps)
+
+    # Add overlay text if present
+    if shot.get('overlay_text'):
+        video_utils.overlay_texts(out_path, shot['overlay_text'])
     console.print(f"[green]✓ {shot['id']} rendered to {out_path}[/green]")
 
 def main():

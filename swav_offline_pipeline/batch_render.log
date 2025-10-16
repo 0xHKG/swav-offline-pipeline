@@ -1,0 +1,29 @@
+==============================================
+SWAVLAMBAN 2025 - ROW-WISE 2-GPU BATCH RENDER
+==============================================
+
+Total Shots: 54 (r001 to r054)
+GPU 0: Odd rows  (r001, r003, r005... r053) = 27 shots
+GPU 1: Even rows (r002, r004, r006... r054) = 27 shots
+
+Storyboard: /home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/storyboard.swav2025v2.yaml
+Output: /home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/renders/swav2025_v2
+
+Starting parallel renders...
+==============================================
+
+[GPU 0] Launched (PID: 147972) - Odd shots (r001, r003, r005...)
+[GPU 1] Launched (PID: 147973) - Even shots (r002, r004, r006...)
+
+Both renders running in parallel!
+
+Monitor progress:
+  GPU 0: tail -f /home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/renders/swav2025_v2/gpu0/render.log
+  GPU 1: tail -f /home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/renders/swav2025_v2/gpu1/render.log
+
+Watch files:
+  watch -n 10 'ls /home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/renders/swav2025_v2/gpu*/intermediate/*.mp4 | wc -l'
+
+Waiting for GPU 0...
+[GPU 0] Rendering r001...
+[GPU 1] Rendering r002...
