@@ -47,7 +47,7 @@ def render_shot(shot, width, height, fps, out_path):
         torch_dtype=torch.float16
     )
     pipe.enable_model_cpu_offload()
-    pipe.enable_vae_slicing()
+    pipe.vae.enable_slicing()  # Correct method for CogVideoX VAE
 
     # Generate video
     prompt = shot['prompt']

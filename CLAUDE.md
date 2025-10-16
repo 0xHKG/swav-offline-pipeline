@@ -3,8 +3,8 @@
 **Project:** Indian Navy Innovation Exhibition Film
 **Venue:** Manekshaw Centre, New Delhi
 **Dates:** 25-26 November 2025
-**Last Updated:** 2025-10-17 00:20 IST
-**Session Status:** MODEL UPGRADE IN PROGRESS - CogVideoX-5B Download (5.8GB / 18GB)
+**Last Updated:** 2025-10-17 00:52 IST
+**Session Status:** TEST RENDER IN PROGRESS - Shot r001 (64% complete, ETA 3 min)
 
 ---
 
@@ -25,19 +25,25 @@ Automated offline video production pipeline for generating a 54-shot exhibition 
    - ~~Stable Video Diffusion img2vid (31GB)~~ REMOVED - pixelated output
    - XTTS v2 Text-to-Speech (2GB) - KEPT
    - MusicGen Small (5.5GB) - KEPT
-3. **Model Upgrade in Progress**:
-   - **CogVideoX-5B** (18GB) - Downloading (5.8GB / 18GB complete)
+3. **Model Upgrade Complete**:
+   - ✅ **CogVideoX-5B** (21GB) - Downloaded and ready
    - Professional-grade text-to-video with native motion generation
+   - Fixed VAE slicing method for CogVideoX compatibility
 4. **Multi-GPU Architecture Implemented**:
    - [render_single_shot.py](swav_offline_pipeline/render_single_shot.py) - Granular shot control
    - [render_rows_2gpu.sh](swav_offline_pipeline/scripts/render_rows_2gpu.sh) - Parallel batch processing (odd/even split)
-   - [render_cogvideox.py](swav_offline_pipeline/render_cogvideox.py) - CogVideoX renderer
+   - [render_cogvideox.py](swav_offline_pipeline/render_cogvideox.py) - CogVideoX renderer (working!)
+   - [render_test_10shots.sh](swav_offline_pipeline/scripts/render_test_10shots.sh) - Test first 10 shots
 5. **Live Monitoring Tools Created**:
    - [monitor_live.sh](swav_offline_pipeline/scripts/monitor_live.sh) - Dashboard view with GPU stats, progress bars, logs
    - [tail_all_logs.sh](swav_offline_pipeline/scripts/tail_all_logs.sh) - Raw log streaming
 6. **Git Branch Structure**:
    - `main` - Original SDXL+SVD approach
    - `cogvideox-improved` - Current branch with CogVideoX-5B (freed 103GB disk space)
+7. **Documentation**:
+   - [QUICKSTART.md](QUICKSTART.md) - Step-by-step render workflow
+   - [MONITORING.md](swav_offline_pipeline/MONITORING.md) - Complete monitoring guide
+   - [scripts/README.md](swav_offline_pipeline/scripts/README.md) - Script reference
 
 ### ⚠️ Issues Encountered & Resolved
 1. **CUDA OOM Error** - 4K video generation exhausted 49GB VRAM → **Fixed:** Switched to 1080p + CogVideoX memory optimizations
@@ -45,8 +51,26 @@ Automated offline video production pipeline for generating a 54-shot exhibition 
 3. **Import Errors** - `requests`, TensorFlow, NumPy conflicts → **Fixed:** Removed PYTHONNOUSERSITE, uninstalled TensorFlow
 4. **Function Signature Bugs** - `kenburns_from_still()`, `extend_frames()` → **Fixed:** Corrected parameter order
 
-### 🎯 Current Focus
-**Model Upgrade for Professional Quality** - Replacing SDXL+SVD with CogVideoX-5B to meet exhibition standards
+### 🎯 Current Session (2025-10-17 00:15 → 00:55)
+1. ✅ **CogVideoX-5B Download Complete** - 21GB model ready
+2. ✅ **Fixed render_cogvideox.py** - Corrected `pipe.vae.enable_slicing()` method
+3. 🔄 **Test Render in Progress** - Shot r001 at 64% (32/50 steps), ETA 3 min
+4. ⏳ **Quality Assessment Pending** - Will review r001.mp4 output
+5. ⏳ **Model Upgrade Research** - Identified HunyuanVideo as best option for exhibition quality
+
+### 📊 Model Comparison Research
+**Video Generation Models for 49GB VRAM:**
+- **HunyuanVideo** (13B params) - ⭐⭐⭐⭐⭐ Industry-leading, optimized for 80GB but can run on 49GB
+- **SkyReels V1** - ⭐⭐⭐⭐⭐ Fine-tuned on 10M+ cinematic clips, best for human subjects
+- **Mochi 1** (10B params) - ⭐⭐⭐⭐ Best text-to-video quality, natural movement
+- **CogVideoX-5B** (current) - ⭐⭐⭐⭐ Good quality, 18GB VRAM, testing now
+
+**Audio/TTS Models:**
+- **Chatterbox** - ⭐⭐⭐⭐⭐ Beats ElevenLabs (63.8% preference), MIT license
+- **F5-TTS** - ⭐⭐⭐⭐⭐ Best controllability
+- **XTTS v2** (current) - ⭐⭐⭐⭐ Industry standard, non-commercial license
+
+**Decision:** Test-first approach - evaluate CogVideoX quality before committing to larger model download
 
 ---
 
