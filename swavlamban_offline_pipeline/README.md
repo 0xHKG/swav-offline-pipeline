@@ -1,0 +1,1 @@
+See scripts/setup.sh, scripts/download_models.sh, scripts/render.sh

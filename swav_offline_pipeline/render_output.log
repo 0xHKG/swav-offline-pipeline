@@ -1,0 +1,36 @@
+========== RENDER START ==========
+RuntimeError: CPU dispatcher tracer already initlized
+Traceback (most recent call last):
+  File "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/orchestrate.py", line 24, in <module>
+    from utils import audio as audio_utils
+  File "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/utils/audio.py", line 10, in <module>
+    from TTS.api import TTS
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/TTS/api.py", line 9, in <module>
+    from TTS.utils.audio.numpy_transforms import save_wav
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/TTS/utils/audio/__init__.py", line 1, in <module>
+    from TTS.utils.audio.processor import AudioProcessor
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/TTS/utils/audio/processor.py", line 10, in <module>
+    from TTS.utils.audio.numpy_transforms import (
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/TTS/utils/audio/numpy_transforms.py", line 8, in <module>
+    from librosa import magphase, pyin
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/lazy_loader/__init__.py", line 83, in __getattr__
+    attr = getattr(submod, name)
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/lazy_loader/__init__.py", line 82, in __getattr__
+    submod = importlib.import_module(submod_path)
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/librosa/core/spectrum.py", line 12, in <module>
+    from numba import jit
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/numba/__init__.py", line 92, in <module>
+    from numba.core.decorators import (cfunc, jit, njit, stencil,
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/numba/core/decorators.py", line 13, in <module>
+    from numba.stencils.stencil import stencil
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/numba/stencils/stencil.py", line 11, in <module>
+    from numba.core import types, typing, utils, ir, config, ir_utils, registry
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/numba/core/ir_utils.py", line 14, in <module>
+    from numba.core.extending import _Intrinsic
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/numba/core/extending.py", line 20, in <module>
+    from numba.core.pythonapi import box, unbox, reflect, NativeValue  # noqa: F401
+  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/numba/core/pythonapi.py", line 11, in <module>
+    from numba import _helperlib
+ImportError: numpy._core.multiarray failed to import
