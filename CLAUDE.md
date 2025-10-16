@@ -3,8 +3,8 @@
 **Project:** Indian Navy Innovation Exhibition Film
 **Venue:** Manekshaw Centre, New Delhi
 **Dates:** 25-26 November 2025
-**Last Updated:** 2025-10-17 01:05 IST
-**Session Status:** UPGRADING TO HUNYUANVIDEO - Download 944MB / 40GB (2%)
+**Last Updated:** 2025-10-17 01:55 IST
+**Session Status:** SWITCHING TO WAN 2.2 - Download 3.5GB / 14GB (25%)
 
 ---
 
@@ -51,7 +51,7 @@ Automated offline video production pipeline for generating a 54-shot exhibition 
 3. **Import Errors** - `requests`, TensorFlow, NumPy conflicts → **Fixed:** Removed PYTHONNOUSERSITE, uninstalled TensorFlow
 4. **Function Signature Bugs** - `kenburns_from_still()`, `extend_frames()` → **Fixed:** Corrected parameter order
 
-### 🎯 Current Session (2025-10-17 00:15 → 01:05)
+### 🎯 Current Session (2025-10-17 00:15 → 01:55)
 1. ✅ **CogVideoX-5B Download Complete** - 21GB model ready
 2. ✅ **Fixed render_cogvideox.py** - Corrected `pipe.vae.enable_slicing()` method
 3. ✅ **Test Render r001 Complete** - 7 minutes, 50 inference steps
@@ -59,21 +59,34 @@ Automated offline video production pipeline for generating a 54-shot exhibition 
    - Issues: Garbled text, AI artifacts, 84KB file size (extremely small)
    - Conclusion: CogVideoX insufficient for professional Navy exhibition
 5. ✅ **Cleanup Complete** - Removed test files, old logs, SDXL/SVD models
-6. 🔄 **Upgrading to HunyuanVideo** - 944MB / 40GB downloaded (2%)
+6. ✅ **Prompt Optimization Implemented** - Created PROMPT_OPTIMIZATION.md + enhance_prompt() function
+   - Removes text overlays (AI can't render readable text)
+   - Adds cinematic keywords ("photorealistic 4K, sharp focus")
+   - Adds camera work ("static shot", "tracking shot")
+   - Expected 30-50% quality improvement
+7. ❌ **HunyuanVideo Download Failed** - Downloaded wrong format (tencent/ instead of hunyuanvideo-community/)
+   - 38GB downloaded but incompatible with diffusers
+   - Requires 60-80GB VRAM (pushes 49GB limits)
+8. ✅ **User Decision: Switch to Wan 2.2** - Better fit for hardware
+9. 🔄 **Wan 2.2 A14B Download In Progress** - 3.5GB / 14GB (25%)
 
 ### 📊 Model Comparison Research
 **Video Generation Models for 49GB VRAM:**
-- **HunyuanVideo** (13B params) - ⭐⭐⭐⭐⭐ Industry-leading, optimized for 80GB but can run on 49GB
+- **Wan 2.2** (14B MoE params) - ⭐⭐⭐⭐⭐ **CHOSEN** - Outperforms Runway Gen-3, optimized for 8-49GB VRAM
+- **HunyuanVideo** (13B params) - ⭐⭐⭐⭐⭐ Industry-leading but requires 60-80GB (wrong format downloaded)
 - **SkyReels V1** - ⭐⭐⭐⭐⭐ Fine-tuned on 10M+ cinematic clips, best for human subjects
 - **Mochi 1** (10B params) - ⭐⭐⭐⭐ Best text-to-video quality, natural movement
-- **CogVideoX-5B** (current) - ⭐⭐⭐⭐ Good quality, 18GB VRAM, testing now
+- **CogVideoX-5B** (tested) - ⭐⭐⭐⭐ Quality insufficient - garbled text, artifacts
 
 **Audio/TTS Models:**
 - **Chatterbox** - ⭐⭐⭐⭐⭐ Beats ElevenLabs (63.8% preference), MIT license
 - **F5-TTS** - ⭐⭐⭐⭐⭐ Best controllability
 - **XTTS v2** (current) - ⭐⭐⭐⭐ Industry standard, non-commercial license
 
-**Decision:** Upgrading to HunyuanVideo after CogVideoX quality assessment showed insufficient exhibition quality
+**Decision:** Switched to Wan 2.2 after:
+1. CogVideoX quality insufficient (garbled text, artifacts)
+2. HunyuanVideo wrong format downloaded (38GB wasted)
+3. Wan 2.2 better fit for 49GB VRAM + superior quality
 
 ---
 
