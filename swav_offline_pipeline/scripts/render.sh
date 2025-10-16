@@ -25,6 +25,13 @@ fi
 
 mkdir -p "$OUTDIR"
 
+# Ensure CUDA and NCCL libraries are locatable
+export LD_LIBRARY_PATH="/usr/local/cuda-12.2/lib64:/usr/local/cuda-12.2/extras/CUPTI/lib64:$HOME/.local/lib/python3.10/site-packages/nvidia/nccl/lib:${LD_LIBRARY_PATH:-}"
+export TRANSFORMERS_OFFLINE=1
+export HF_HUB_OFFLINE=1
+export TF_CPP_MIN_LOG_LEVEL=3
+unset TF_ENABLE_ONEDNN_OPTS
+
 echo "========== RENDER START =========="
 python "$ROOT_DIR/orchestrate.py" \
   --storyboard "$STORYBOARD" \
