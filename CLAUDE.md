@@ -3,8 +3,8 @@
 **Project:** Indian Navy Innovation Exhibition Film
 **Venue:** Manekshaw Centre, New Delhi
 **Dates:** 25-26 November 2025
-**Last Updated:** 2025-10-16 23:47 IST
-**Session Status:** IN PROGRESS - Continue on 4-GPU machine tomorrow
+**Last Updated:** 2025-10-17 00:20 IST
+**Session Status:** MODEL UPGRADE IN PROGRESS - CogVideoX-5B Download (5.8GB / 18GB)
 
 ---
 
@@ -18,41 +18,55 @@ Automated offline video production pipeline for generating a 54-shot exhibition 
 
 ## 🎯 CURRENT STATUS SUMMARY
 
-### ✅ Completed Today (2025-10-16)
-1. **Environment Setup** - Python 3.10 + CUDA 12.1 conda environment created
-2. **AI Models Downloaded** (110GB total):
-   - Stable Diffusion XL Base (72GB)
-   - Stable Video Diffusion img2vid (31GB)
-   - XTTS v2 Text-to-Speech (2GB)
-   - MusicGen Small (5.5GB)
-3. **Dependencies Installed** - All 26 required packages working
-4. **Test Render** - Shot 001 completed successfully (39MB, 4K @ 30fps, 7 seconds)
+### ✅ Completed (2025-10-16 → 2025-10-17)
+1. **Environment Setup** - Python 3.10 + CUDA 12.2 conda environment created
+2. **Initial AI Models Downloaded** (110GB total, now replaced):
+   - ~~Stable Diffusion XL Base (72GB)~~ REMOVED - poor quality
+   - ~~Stable Video Diffusion img2vid (31GB)~~ REMOVED - pixelated output
+   - XTTS v2 Text-to-Speech (2GB) - KEPT
+   - MusicGen Small (5.5GB) - KEPT
+3. **Model Upgrade in Progress**:
+   - **CogVideoX-5B** (18GB) - Downloading (5.8GB / 18GB complete)
+   - Professional-grade text-to-video with native motion generation
+4. **Multi-GPU Architecture Implemented**:
+   - [render_single_shot.py](swav_offline_pipeline/render_single_shot.py) - Granular shot control
+   - [render_rows_2gpu.sh](swav_offline_pipeline/scripts/render_rows_2gpu.sh) - Parallel batch processing (odd/even split)
+   - [render_cogvideox.py](swav_offline_pipeline/render_cogvideox.py) - CogVideoX renderer
+5. **Live Monitoring Tools Created**:
+   - [monitor_live.sh](swav_offline_pipeline/scripts/monitor_live.sh) - Dashboard view with GPU stats, progress bars, logs
+   - [tail_all_logs.sh](swav_offline_pipeline/scripts/tail_all_logs.sh) - Raw log streaming
+6. **Git Branch Structure**:
+   - `main` - Original SDXL+SVD approach
+   - `cogvideox-improved` - Current branch with CogVideoX-5B (freed 103GB disk space)
 
-### ⚠️ Issues Encountered
-1. **CUDA OOM Error** - 4K video generation at shot 2 exhausted 49GB VRAM on single GPU
-2. **Visual Quality Concern** - AI-generated backgrounds appear pixelated/distorted (user feedback: "looks bad")
-3. **Architecture Limitation** - Single-GPU rendering won't scale for 54 shots at 4K
+### ⚠️ Issues Encountered & Resolved
+1. **CUDA OOM Error** - 4K video generation exhausted 49GB VRAM → **Fixed:** Switched to 1080p + CogVideoX memory optimizations
+2. **Visual Quality Issue** - SDXL+SVD backgrounds pixelated (user: "looks bad") → **Fixed:** Upgrading to CogVideoX-5B
+3. **Import Errors** - `requests`, TensorFlow, NumPy conflicts → **Fixed:** Removed PYTHONNOUSERSITE, uninstalled TensorFlow
+4. **Function Signature Bugs** - `kenburns_from_still()`, `extend_frames()` → **Fixed:** Corrected parameter order
 
-### 🔧 Solution Identified
-**Multi-GPU Batch Rendering** - Split 54 shots across 2 GPUs (or 4 on better machine) for parallel processing
+### 🎯 Current Focus
+**Model Upgrade for Professional Quality** - Replacing SDXL+SVD with CogVideoX-5B to meet exhibition standards
 
 ---
 
 ## 💻 SYSTEM SPECIFICATIONS
 
-### Current Machine (2-GPU Setup)
+### Production Machine (Current)
+- **CPU:** AMD Ryzen Threadripper PRO 7985WX (128 cores @ 2.50-5.10 GHz)
+- **RAM:** 256GB DDR5
 - **GPUs:** 2x NVIDIA RTX A6000 (49GB VRAM each, 98GB total)
-- **OS:** Linux 6.8.0-85-generic (Ubuntu 22.04)
+- **OS:** Linux 6.8.0-85-generic (Ubuntu 22.04 LTS)
 - **CUDA:** 12.2
-- **RAM:** Unknown (but sufficient for conda environment)
-- **Storage:** ~110GB models + 39MB per rendered shot
+- **Storage:** NVMe SSD with 103GB freed (after removing SDXL+SVD)
+- **Model Footprint:** ~26GB (CogVideoX-5B 18GB + XTTS 2GB + MusicGen 5.5GB + overhead)
 
-### Target Machine (Tomorrow - 4-GPU Setup)
-- **GPUs:** 4x GPUs (model/VRAM specs needed)
-- **Benefits:**
-  - 2x parallelization (4 shots simultaneously vs 2)
-  - Better memory distribution for 4K renders
-  - Faster completion (~90 mins vs 3+ hours)
+### Performance Characteristics
+- **2-GPU Parallel Rendering:** 27 shots per GPU (odd/even row split)
+- **Expected Render Time:** ~2-3 minutes per shot with CogVideoX-5B (50 inference steps, 49 frames)
+- **Total Estimated Time:** 54 shots × 2.5 min avg ÷ 2 GPUs = **~68 minutes for full render**
+- **VRAM Per Shot:** ~18GB (CogVideoX model + inference overhead)
+- **Memory Optimizations:** CPU offloading, VAE slicing enabled
 
 ---
 
