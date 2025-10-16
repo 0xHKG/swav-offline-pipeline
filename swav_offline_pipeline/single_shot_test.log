@@ -1,25 +1,0 @@
-/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:211: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
-  @torch.library.impl_abstract("xformers_flash::flash_fwd")
-/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:344: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
-  @torch.library.impl_abstract("xformers_flash::flash_bwd")
-Rendering r001 with CogVideoX-5B
-Loading CogVideoX pipeline...
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]`torch_dtype` is deprecated! Use `dtype` instead!
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
-Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.00it/s][A
-Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.20it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  3.17it/s]
-Loading pipeline components...:  20%|██        | 1/5 [00:00<00:02,  1.53it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00,  5.69it/s]
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
-Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  1.42it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  2.53it/s]
-Loading pipeline components...: 100%|██████████| 5/5 [00:01<00:00,  2.83it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:01<00:00,  3.01it/s]
-Traceback (most recent call last):
-  File "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/render_cogvideox.py", line 96, in <module>
-    exit(main())
-  File "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/render_cogvideox.py", line 91, in main
-    render_shot(shot, width, height, fps, out_path)
-  File "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/render_cogvideox.py", line 50, in render_shot
-    pipe.enable_vae_slicing()
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/configuration_utils.py", line 144, in __getattr__
-    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
-AttributeError: 'CogVideoXPipeline' object has no attribute 'enable_vae_slicing'

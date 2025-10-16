@@ -1,180 +1,0 @@
-========== RENDER START ==========
-/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:211: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
-  @torch.library.impl_abstract("xformers_flash::flash_fwd")
-/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:344: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
-  @torch.library.impl_abstract("xformers_flash::flash_bwd")
-──────────────────────── Swavlamban 2025 Offline Render ────────────────────────
-[23:37:50] Scene: Opening                                     orchestrate.py:248
-Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  14%|█▍        | 1/7 [00:00<00:00,  8.82it/s]`torch_dtype` is deprecated! Use `dtype` instead!
-Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00, 21.71it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00, 21.48it/s]
-           Generating still for row 1 with SDXL                orchestrate.py:82
-  0%|          | 0/30 [00:00<?, ?it/s]  3%|▎         | 1/30 [00:03<01:37,  3.37s/it]  7%|▋         | 2/30 [00:04<00:54,  1.96s/it] 10%|█         | 3/30 [00:06<00:54,  2.00s/it] 13%|█▎        | 4/30 [00:08<00:52,  2.03s/it] 17%|█▋        | 5/30 [00:10<00:50,  2.03s/it] 20%|██        | 6/30 [00:12<00:48,  2.04s/it] 23%|██▎       | 7/30 [00:14<00:46,  2.04s/it] 27%|██▋       | 8/30 [00:16<00:44,  2.05s/it] 30%|███       | 9/30 [00:18<00:43,  2.05s/it] 33%|███▎      | 10/30 [00:20<00:41,  2.05s/it] 37%|███▋      | 11/30 [00:22<00:39,  2.06s/it] 40%|████      | 12/30 [00:24<00:37,  2.06s/it] 43%|████▎     | 13/30 [00:26<00:35,  2.06s/it] 47%|████▋     | 14/30 [00:29<00:32,  2.06s/it] 50%|█████     | 15/30 [00:31<00:30,  2.07s/it] 53%|█████▎    | 16/30 [00:33<00:28,  2.07s/it] 57%|█████▋    | 17/30 [00:35<00:26,  2.07s/it] 60%|██████    | 18/30 [00:37<00:24,  2.08s/it] 63%|██████▎   | 19/30 [00:39<00:22,  2.08s/it] 67%|██████▋   | 20/30 [00:41<00:20,  2.08s/it] 70%|███████   | 21/30 [00:43<00:18,  2.09s/it] 73%|███████▎  | 22/30 [00:45<00:16,  2.09s/it] 77%|███████▋  | 23/30 [00:47<00:14,  2.09s/it] 80%|████████  | 24/30 [00:49<00:12,  2.10s/it] 83%|████████▎ | 25/30 [00:52<00:10,  2.10s/it] 87%|████████▋ | 26/30 [00:54<00:08,  2.10s/it] 90%|█████████ | 27/30 [00:56<00:06,  2.10s/it] 93%|█████████▎| 28/30 [00:58<00:04,  2.11s/it] 97%|█████████▋| 29/30 [01:00<00:02,  2.11s/it]100%|██████████| 30/30 [01:02<00:00,  2.11s/it]100%|██████████| 30/30 [01:02<00:00,  2.09s/it]
-ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm9 Copyright (c) 2000-2021 the FFmpeg developers
-  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04.2)
-  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm9 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
-  libavutil      56. 70.100 / 56. 70.100
-  libavcodec     58.134.100 / 58.134.100
-  libavformat    58. 76.100 / 58. 76.100
-  libavdevice    58. 13.100 / 58. 13.100
-  libavfilter     7.110.100 /  7.110.100
-  libswscale      5.  9.100 /  5.  9.100
-  libswresample   3.  9.100 /  3.  9.100
-  libpostproc    55.  9.100 / 55.  9.100
-[png_pipe @ 0x62c20183a500] Stream #0: not enough frames to estimate rate; consider increasing probesize
-Input #0, png_pipe, from '/tmp/tmpp2lu6y7t.png':
-  Duration: N/A, bitrate: N/A
-  Stream #0:0: Video: png, rgb24(pc), 3840x2160, 25 fps, 25 tbr, 25 tbn, 25 tbc
-Stream mapping:
-  Stream #0:0 -> #0:0 (png (native) -> h264 (libx264))
-Press [q] to stop, [?] for help
-[libx264 @ 0x62c201841840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
-[libx264 @ 0x62c201841840] profile High, level 5.1, 4:2:0, 8-bit
-[libx264 @ 0x62c201841840] 264 - core 163 r3060 5db6aa6 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=67 lookahead_threads=11 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=crf mbtree=1 crf=10.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-Output #0, mp4, to '/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/renders/swav2025/intermediate/shot_001.mp4':
-  Metadata:
-    encoder         : Lavf58.76.100
-  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, q=2-31, 30 fps, 15360 tbn
-    Metadata:
-      encoder         : Lavc58.134.100 libx264
-    Side data:
-      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
-frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   37 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   67 fps= 56 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  102 fps= 60 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  123 fps= 44 q=16.0 size=    2816kB time=-00:00:00.03 bitrate=N/A speed=N/A    frame=  171 fps= 52 q=16.0 size=   11776kB time=00:00:01.56 bitrate=61573.6kbits/s speed=0.473x    frame=  197 fps= 52 q=16.0 size=   16128kB time=00:00:02.43 bitrate=54294.8kbits/s speed=0.638x    frame=  210 fps= 39 q=-1.0 Lsize=   37212kB time=00:00:06.90 bitrate=44179.5kbits/s speed=1.27x    
-video:37208kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.009619%
-[libx264 @ 0x62c201841840] frame I:1     Avg QP: 8.63  size:2519827
-[libx264 @ 0x62c201841840] frame P:55    Avg QP: 8.77  size:583175
-[libx264 @ 0x62c201841840] frame B:154   Avg QP:17.41  size: 22768
-[libx264 @ 0x62c201841840] consecutive B-frames:  0.5%  4.8%  1.4% 93.3%
-[libx264 @ 0x62c201841840] mb I  I16..4:  5.4% 32.2% 62.4%
-[libx264 @ 0x62c201841840] mb P  I16..4:  0.0%  0.1%  0.0%  P16..4: 43.0% 25.2% 30.2%  0.0%  0.0%    skip: 1.6%
-[libx264 @ 0x62c201841840] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 40.3%  5.5%  1.2%  direct: 1.1%  skip:51.9%  L0:50.6% L1:39.2% BI:10.2%
-[libx264 @ 0x62c201841840] 8x8 transform intra:33.8% inter:16.9%
-[libx264 @ 0x62c201841840] direct mvs  spatial:77.9% temporal:22.1%
-[libx264 @ 0x62c201841840] coded y,uvDC,uvAC intra: 99.8% 97.5% 96.4% inter: 21.2% 12.6% 7.8%
-[libx264 @ 0x62c201841840] i16 v,h,dc,p: 31% 11% 24% 34%
-[libx264 @ 0x62c201841840] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 19% 10%  3%  5%  6%  9%  6%  7%
-[libx264 @ 0x62c201841840] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 16%  7%  6% 10% 10% 15%  9% 11%
-[libx264 @ 0x62c201841840] i8c dc,h,v,p: 53% 18% 21%  7%
-[libx264 @ 0x62c201841840] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x62c201841840] ref P L0: 51.5%  3.8% 11.2% 24.7%  8.7%
-[libx264 @ 0x62c201841840] ref B L0: 71.6% 13.3% 12.9%  2.2%
-[libx264 @ 0x62c201841840] ref B L1: 90.6%  9.4%
-[libx264 @ 0x62c201841840] kb/s:43543.78
-ffmpeg version 4.4.2-0ubuntu0.22.04.1+esm9 Copyright (c) 2000-2021 the FFmpeg developers
-  built with gcc 11 (Ubuntu 11.4.0-1ubuntu1~22.04.2)
-  configuration: --prefix=/usr --extra-version=0ubuntu0.22.04.1+esm9 --toolchain=hardened --libdir=/usr/lib/x86_64-linux-gnu --incdir=/usr/include/x86_64-linux-gnu --arch=amd64 --enable-gpl --disable-stripping --enable-gnutls --enable-ladspa --enable-libaom --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcdio --enable-libcodec2 --enable-libdav1d --enable-libflite --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libjack --enable-libmp3lame --enable-libmysofa --enable-libopenjpeg --enable-libopenmpt --enable-libopus --enable-libpulse --enable-librabbitmq --enable-librubberband --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libssh --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwebp --enable-libx265 --enable-libxml2 --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-lv2 --enable-omx --enable-openal --enable-opencl --enable-opengl --enable-sdl2 --enable-pocketsphinx --enable-librsvg --enable-libmfx --enable-libdc1394 --enable-libdrm --enable-libiec61883 --enable-chromaprint --enable-frei0r --enable-libx264 --enable-shared
-  libavutil      56. 70.100 / 56. 70.100
-  libavcodec     58.134.100 / 58.134.100
-  libavformat    58. 76.100 / 58. 76.100
-  libavdevice    58. 13.100 / 58. 13.100
-  libavfilter     7.110.100 /  7.110.100
-  libswscale      5.  9.100 /  5.  9.100
-  libswresample   3.  9.100 /  3.  9.100
-  libpostproc    55.  9.100 / 55.  9.100
-Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/renders/swav2025/intermediate/shot_001.mp4':
-  Metadata:
-    major_brand     : isom
-    minor_version   : 512
-    compatible_brands: isomiso2avc1mp41
-    encoder         : Lavf58.76.100
-  Duration: 00:00:07.00, start: 0.000000, bitrate: 43548 kb/s
-  Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 3840x2160, 43544 kb/s, 30 fps, 30 tbr, 15360 tbn, 60 tbc (default)
-    Metadata:
-      handler_name    : VideoHandler
-      vendor_id       : [0][0][0][0]
-Stream mapping:
-  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
-Press [q] to stop, [?] for help
-[libx264 @ 0x5bf6be39f840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2 AVX512
-[libx264 @ 0x5bf6be39f840] profile High, level 5.1, 4:2:0, 8-bit
-[libx264 @ 0x5bf6be39f840] 264 - core 163 r3060 5db6aa6 - H.264/MPEG-4 AVC codec - Copyleft 2003-2021 - http://www.videolan.org/x264.html - options: cabac=1 ref=5 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=8 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=2 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=67 lookahead_threads=11 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=3 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=50 rc=crf mbtree=1 crf=10.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
-Output #0, mp4, to '/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/renders/swav2025/intermediate/shot_001.tmp.mp4':
-  Metadata:
-    major_brand     : isom
-    minor_version   : 512
-    compatible_brands: isomiso2avc1mp41
-    encoder         : Lavf58.76.100
-  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, q=2-31, 30 fps, 15360 tbn (default)
-    Metadata:
-      handler_name    : VideoHandler
-      vendor_id       : [0][0][0][0]
-      encoder         : Lavc58.134.100 libx264
-    Side data:
-      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
-frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   39 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=   70 fps= 61 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  108 fps= 65 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  123 fps= 47 q=16.0 size=    2816kB time=-00:00:00.03 bitrate=N/A speed=N/A    frame=  175 fps= 56 q=16.0 size=   12544kB time=00:00:01.70 bitrate=60445.2kbits/s speed=0.541x    frame=  200 fps= 55 q=16.0 size=   17664kB time=00:00:02.53 bitrate=57118.5kbits/s speed=0.693x    frame=  210 fps= 41 q=-1.0 Lsize=   39710kB time=00:00:06.90 bitrate=47145.2kbits/s speed=1.36x    
-video:39706kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.009526%
-[libx264 @ 0x5bf6be39f840] frame I:1     Avg QP: 8.97  size:2477985
-[libx264 @ 0x5bf6be39f840] frame P:59    Avg QP: 9.07  size:592176
-[libx264 @ 0x5bf6be39f840] frame B:150   Avg QP:17.60  size: 21615
-[libx264 @ 0x5bf6be39f840] consecutive B-frames:  0.5% 12.4%  1.4% 85.7%
-[libx264 @ 0x5bf6be39f840] mb I  I16..4:  6.2% 29.8% 64.0%
-[libx264 @ 0x5bf6be39f840] mb P  I16..4:  0.0%  0.1%  0.0%  P16..4: 42.9% 25.7% 29.3%  0.0%  0.0%    skip: 2.0%
-[libx264 @ 0x5bf6be39f840] mb B  I16..4:  0.0%  0.0%  0.0%  B16..8: 40.6%  4.9%  1.0%  direct: 1.1%  skip:52.4%  L0:53.6% L1:37.7% BI: 8.7%
-[libx264 @ 0x5bf6be39f840] 8x8 transform intra:31.5% inter:16.4%
-[libx264 @ 0x5bf6be39f840] direct mvs  spatial:77.3% temporal:22.7%
-[libx264 @ 0x5bf6be39f840] coded y,uvDC,uvAC intra: 99.4% 96.4% 94.5% inter: 21.7% 12.8% 6.9%
-[libx264 @ 0x5bf6be39f840] i16 v,h,dc,p: 32% 10% 30% 28%
-[libx264 @ 0x5bf6be39f840] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 18% 13%  3%  5%  6%  8%  6%  6%
-[libx264 @ 0x5bf6be39f840] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 20% 16%  8%  6%  9%  9% 14%  8% 10%
-[libx264 @ 0x5bf6be39f840] i8c dc,h,v,p: 53% 17% 24%  6%
-[libx264 @ 0x5bf6be39f840] Weighted P-Frames: Y:0.0% UV:0.0%
-[libx264 @ 0x5bf6be39f840] ref P L0: 51.9%  4.6% 14.8% 20.0%  8.7%
-[libx264 @ 0x5bf6be39f840] ref B L0: 77.4% 11.4%  9.7%  1.6%
-[libx264 @ 0x5bf6be39f840] ref B L1: 93.5%  6.5%
-[libx264 @ 0x5bf6be39f840] kb/s:46466.96
-[23:39:16] Generating base frame for row 2                    orchestrate.py:103
-  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:01<00:42,  1.76s/it]  8%|▊         | 2/25 [00:03<00:44,  1.93s/it] 12%|█▏        | 3/25 [00:05<00:43,  1.99s/it] 16%|█▌        | 4/25 [00:07<00:42,  2.01s/it] 20%|██        | 5/25 [00:09<00:40,  2.03s/it] 24%|██▍       | 6/25 [00:12<00:38,  2.04s/it] 28%|██▊       | 7/25 [00:14<00:36,  2.05s/it] 32%|███▏      | 8/25 [00:16<00:34,  2.05s/it] 36%|███▌      | 9/25 [00:18<00:32,  2.06s/it] 40%|████      | 10/25 [00:20<00:30,  2.06s/it] 44%|████▍     | 11/25 [00:22<00:28,  2.07s/it] 48%|████▊     | 12/25 [00:24<00:26,  2.07s/it] 52%|█████▏    | 13/25 [00:26<00:24,  2.07s/it] 56%|█████▌    | 14/25 [00:28<00:22,  2.08s/it] 60%|██████    | 15/25 [00:30<00:20,  2.08s/it] 64%|██████▍   | 16/25 [00:32<00:18,  2.08s/it] 68%|██████▊   | 17/25 [00:34<00:16,  2.08s/it] 72%|███████▏  | 18/25 [00:36<00:14,  2.08s/it] 76%|███████▌  | 19/25 [00:39<00:12,  2.08s/it] 80%|████████  | 20/25 [00:41<00:10,  2.09s/it] 84%|████████▍ | 21/25 [00:43<00:08,  2.09s/it] 88%|████████▊ | 22/25 [00:45<00:06,  2.09s/it] 92%|█████████▏| 23/25 [00:47<00:04,  2.09s/it] 96%|█████████▌| 24/25 [00:49<00:02,  2.09s/it]100%|██████████| 25/25 [00:51<00:00,  2.09s/it]100%|██████████| 25/25 [00:51<00:00,  2.06s/it]
-Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  5.09it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00,  6.09it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  7.33it/s]
-[23:40:15] Animating row 2 with Stable Video Diffusion (40    orchestrate.py:117
-           frames)                                                              
-  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:04<01:53,  4.72s/it]  8%|▊         | 2/25 [00:08<01:39,  4.32s/it] 12%|█▏        | 3/25 [00:12<01:32,  4.19s/it] 16%|█▌        | 4/25 [00:16<01:26,  4.13s/it] 20%|██        | 5/25 [00:20<01:21,  4.10s/it] 24%|██▍       | 6/25 [00:24<01:17,  4.08s/it] 28%|██▊       | 7/25 [00:28<01:13,  4.07s/it] 32%|███▏      | 8/25 [00:33<01:09,  4.07s/it] 36%|███▌      | 9/25 [00:37<01:05,  4.07s/it] 40%|████      | 10/25 [00:41<01:01,  4.07s/it] 44%|████▍     | 11/25 [00:45<00:56,  4.07s/it] 48%|████▊     | 12/25 [00:49<00:52,  4.06s/it] 52%|█████▏    | 13/25 [00:53<00:48,  4.06s/it] 56%|█████▌    | 14/25 [00:57<00:44,  4.06s/it] 60%|██████    | 15/25 [01:01<00:40,  4.07s/it] 64%|██████▍   | 16/25 [01:05<00:36,  4.07s/it] 68%|██████▊   | 17/25 [01:09<00:32,  4.06s/it] 72%|███████▏  | 18/25 [01:13<00:28,  4.07s/it] 76%|███████▌  | 19/25 [01:17<00:24,  4.07s/it] 80%|████████  | 20/25 [01:21<00:20,  4.07s/it] 84%|████████▍ | 21/25 [01:25<00:16,  4.07s/it] 88%|████████▊ | 22/25 [01:29<00:12,  4.07s/it] 92%|█████████▏| 23/25 [01:34<00:08,  4.07s/it] 96%|█████████▌| 24/25 [01:38<00:04,  4.07s/it]100%|██████████| 25/25 [01:42<00:00,  4.06s/it]100%|██████████| 25/25 [01:42<00:00,  4.09s/it]
-⠴ Rendering storyboard 0:04:18
-Traceback (most recent call last):
-  File "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/orchestrate.py", line 303, in <module>
-    main()
-  File "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/orchestrate.py", line 264, in main
-    render_img2vid(spec, width, height, fps, out_path)
-  File "/home/gogi/Desktop/Swavlamban 2025/swav_offline_pipeline/orchestrate.py", line 118, in render_img2vid
-    result = img2vid_pipe(
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
-    return func(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/pipelines/stable_video_diffusion/pipeline_stable_video_diffusion.py", line 618, in __call__
-    frames = self.decode_latents(latents, num_frames, decode_chunk_size)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/pipelines/stable_video_diffusion/pipeline_stable_video_diffusion.py", line 308, in decode_latents
-    frame = self.vae.decode(latents[i : i + decode_chunk_size], **decode_kwargs).sample
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/utils/accelerate_utils.py", line 46, in wrapper
-    return method(self, *args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl_temporal_decoder.py", line 328, in decode
-    decoded = self.decoder(z, num_frames=num_frames, image_only_indicator=image_only_indicator)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/models/autoencoders/autoencoder_kl_temporal_decoder.py", line 121, in forward
-    sample = up_block(sample, image_only_indicator=image_only_indicator)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/models/unets/unet_3d_blocks.py", line 1000, in forward
-    hidden_states = resnet(
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/models/resnet.py", line 708, in forward
-    hidden_states = self.temporal_res_block(hidden_states, temb)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/diffusers/models/resnet.py", line 613, in forward
-    hidden_states = self.conv1(hidden_states)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
-    return self._call_impl(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 608, in forward
-    return self._conv_forward(input, self.weight, self.bias)
-  File "/home/gogi/miniconda3/envs/swav_offline/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 603, in _conv_forward
-    return F.conv3d(
-torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 16.88 GiB. GPU 0 has a total capacity of 47.43 GiB of which 11.91 GiB is free. Including non-PyTorch memory, this process has 35.50 GiB memory in use. Of the allocated memory 33.99 GiB is allocated by PyTorch, and 1.19 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

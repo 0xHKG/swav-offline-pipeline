@@ -33,6 +33,49 @@ def load_shot_from_yaml(storyboard_path: str, shot_id: str):
 
     raise ValueError(f"Shot {shot_id} not found in storyboard")
 
+def enhance_prompt(original_prompt, shot_id):
+    """Enhance prompts for better HunyuanVideo output quality
+
+    Adds cinematic keywords, style descriptors, and quality boosters.
+    Removes text overlays (AI can't generate readable text).
+    """
+    # Remove text overlay instructions (Super:, overlay text, quotes)
+    import re
+    prompt = re.sub(r'Super:\s*["\'].*?["\']', '', original_prompt)
+    prompt = re.sub(r'["\'].*?["\']', '', prompt)
+
+    # Remove editing/audio cues
+    editing_terms = ['Black to', 'fade to', 'cut to', 'swell', 'dissolve', 'transition']
+    for term in editing_terms:
+        prompt = prompt.replace(term, '')
+
+    # Clean up extra whitespace/punctuation
+    prompt = re.sub(r'\s+', ' ', prompt).strip()
+    prompt = re.sub(r'[;,]\s*$', '', prompt)
+
+    # Quality and style boosters
+    quality = "photorealistic 4K footage, sharp focus, high detail, professional cinematography"
+
+    # Style based on content
+    prompt_lower = prompt.lower()
+    if any(term in prompt_lower for term in ['naval', 'ship', 'submarine', 'carrier', 'destroyer']):
+        style = "cinematic naval documentary style, dramatic ocean lighting"
+        camera = "stable wide shot"
+    elif any(term in prompt_lower for term in ['exhibition', 'hall', 'desk', 'corridor']):
+        style = "professional corporate event videography, clean modern interior"
+        camera = "smooth tracking shot" if 'walk' in prompt_lower else "static medium shot"
+    elif any(term in prompt_lower for term in ['officer', 'sailor', 'crew', 'team']):
+        style = "respectful military documentary style, dignified presentation"
+        camera = "steady handheld"
+    else:
+        style = "cinematic documentary style, professional composition"
+        camera = "static establishing shot"
+
+    # Combine (only if not already present)
+    enhanced = f"{prompt}, {camera}, {style}, {quality}"
+
+    return enhanced
+
 def render_shot(shot, width, height, fps, out_path):
     """Render using HunyuanVideo with memory optimizations for 49GB VRAM"""
     console.print(f"[bold cyan]Rendering {shot['id']} with HunyuanVideo[/bold cyan]")
@@ -52,9 +95,12 @@ def render_shot(shot, width, height, fps, out_path):
     pipe.enable_model_cpu_offload()  # Offload inactive components to CPU
     pipe.vae.enable_tiling()  # Enable VAE tiling for memory efficiency
 
-    # Generate video
-    prompt = shot['prompt']
-    console.print(f"[cyan]Prompt: {prompt[:100]}...[/cyan]")
+    # Enhance prompt for better quality
+    original_prompt = shot['prompt']
+    prompt = enhance_prompt(original_prompt, shot['id'])
+
+    console.print(f"[dim]Original: {original_prompt[:80]}...[/dim]")
+    console.print(f"[cyan]Enhanced: {prompt[:100]}...[/cyan]")
 
     # Calculate duration-based frames (target 6 seconds)
     # HunyuanVideo produces 24fps native, so 6s = 145 frames
