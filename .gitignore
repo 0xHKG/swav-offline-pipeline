@@ -1,0 +1,9 @@
+models/
+renders/
+assets/source/
+*.mp4
+*.srt
+*.part
+__pycache__/
+*.pyc
+.env

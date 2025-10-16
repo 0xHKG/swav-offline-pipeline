@@ -1,0 +1,292 @@
+project:
+  title: "Swavlamban 2025"
+  venue: "Manekshaw Centre, New Delhi"
+  dates: "25–26 Nov 2025"
+  fps: 30
+  voice: "male"
+  music_tag: "ceremonial orchestral, dignified, 72 bpm"
+  resolution: "4k"
+
+scenes:
+  - id: film
+    shots:
+
+      - id: r001
+        method: t2v
+        prompt: 'Black to Indian Navy crest over the Tricolour; slow fade to the façade of Manekshaw Centre; crisp brass section swell. Super: “Swavlamban 2025 · Manekshaw Centre · 25–26 Nov 2025”.'
+        duration_s: 6
+        narration: 'Narrator (measured, ceremonial): Swavlamban 2025—the Indian Navy’s annual seminar and exhibition of innovation and indigenisation, organised by the Naval Innovation & Indigenisation Organisation, NIIO.'
+        overlay_text:
+          - 'SWAVLAMBAN 2025 · Manekshaw Centre · 25–26 Nov 2025'
+          - 'STRENGTH & POWER THROUGH INNOVATION AND INDIGENISATION'
+          - 'नवाचार एवं स्वदेशीकरण से सशक्तिकरण'
+      - id: r002
+        method: img2vid
+        prompt: 'A dignified corridor walk-through: officers and sailors pass framed photographs of ships, submarines and fleet exercises; exhibition signage reveals the floor plan; ushers guide visitors.'
+        duration_s: 5
+        narration: 'Here, India’s armed forces, engineers, scientists, startups and MSMEs—meet with a single purpose: to turn ideas into operational capabilities for the Fleet.'
+      - id: r003
+        method: img2vid
+        prompt: 'Montage: INS Vikrant under way; frigate at speed; a submarine slipping beneath the surface; carrier deck operations; a destroyer launching a missile; cut to labs and integration bays.'
+        duration_s: 6
+        narration: 'Aatmanirbharta at sea is not a slogan; it is a disciplined programme—clear requirements, rigorous trials, and decisive adoption—so that the sailor at sea receives what works, when it is needed.'
+      - id: r004
+        method: t2v
+        prompt: 'NIIO welcome desk; inaugural lamp-lighting; the exhibition opens; the hall is ordered, calm, professional.'
+        duration_s: 5
+        narration: 'NIIO provides the Navy’s institutional framework to identify needs, engage innovators and shepherd solutions from problem statement to pier-side fitment.'
+      - id: r005
+        method: t2v
+        prompt: 'Minimal onscreen counter animates once and settles; no flashy motion graphics.'
+        duration_s: 6
+        narration: 'Since inception, our journey is measured in outcomes: Acceptance of Necessity sanctioned—₹2,744 crore; contracts concluded—₹1,457 crore. Cumulative, deliberate, and real.'
+      - id: r006
+        method: t2v
+        prompt: 'SECTION SLATE — Operational Readiness: Crew Safety & Damage Control'
+        duration_s: 4
+        narration: 'Lives protected. Readiness preserved.'
+      - id: r007
+        method: img2vid
+        prompt: 'Shipboard drill: a team dons Aerogel Fire Proximity Suits; one sailor clips a temperature tag; another checks glove grip. A Caged Drone with thermal imaging lifts and enters a smoke-filled compartment, its display mirrored on a handheld. Rugged DC/FF Torch beam cuts through smoke.'
+        duration_s: 6
+        narration: 'On the line between danger and duty, indigenous gear gives confidence: suits that resist heat, optics that see through smoke, and tools designed for gloved hands and rolling decks.'
+      - id: r008
+        method: t2v
+        prompt: 'Close cuts: Smart Firefighting Retrofit attaches to existing breathing sets; a firefighter checks flow; the Cooling Vest is zipped beneath a jacket; the Portable Hydraulic Metal Cutter bites through deformed plate.'
+        duration_s: 5
+        narration: 'Smart retrofits raise performance without changing core equipment. Cooling vests shorten recovery. Hydraulic cutting saves precious minutes in confined spaces.'
+      - id: r009
+        method: img2vid
+        prompt: 'Exhibition vignette: clean plinths display Aerogel Suits, TIC Caged Drone, Retrofit kits, DC/FF torch, Cooling vests, Hydraulic cutter; spec placards; quick exchanges between ship’s crew and innovators.'
+        duration_s: 5
+        narration: 'Designed for the sea. Built for the Fleet. Scaled for the Navy. These are the quiet multipliers that preserve combat power.'
+      - id: r010
+        method: t2v
+        prompt: 'SECTION SLATE — Undersea Robotics & Subsea Enablers'
+        duration_s: 4
+        narration: 'Endurance and precision beneath the waves.'
+      - id: r011
+        method: img2vid
+        prompt: 'An AUV leaves a RHIB and begins its leg; overlay shows the Underwater Navigation System holding a precise track; bathymetry appears as a clean ribbon.'
+        duration_s: 5
+        narration: 'Underwater Navigation for AUVs brings reliable tracks in littorals and harbours, enabling missions that demand precision over hours rather than minutes.'
+      - id: r012
+        method: img2vid
+        prompt: 'Graphic: Underwater Communication for a Swarm of AUVs; bursts of data hop from vehicle to vehicle; on a ship’s screen, the mission status tiles update in sequence.'
+        duration_s: 5
+        narration: 'Swarm communication ensures every node contributes to the mission—even when the sea is noisy and the range is long.'
+      - id: r013
+        method: img2vid
+        prompt: 'ROV footage: manipulators touch a hull; corrosion area is tagged; a diver supervises from a safe distance.'
+        duration_s: 5
+        narration: 'Underwater ROVs reduce risk and increase repeatability during inspection and repair—every check logged, every anomaly recorded.'
+      - id: r014
+        method: img2vid
+        prompt: 'A submarine launches SLXBT; an operator reads a temperature profile on a plot; the Submarine Voyage Data Recorder screen rolls through a time slice of events.'
+        duration_s: 5
+        narration: 'Ocean data informs tactics. Voyage data captures truth. Together they sharpen decision-making under water.'
+      - id: r015
+        method: t2v
+        prompt: 'SECTION SLATE — C4ISR: The Real-Time Maritime Picture'
+        duration_s: 4
+        narration: 'From sensors to decisions, in real time. This is Strength and Power through Innovation and Indigenisation.'
+      - id: r016
+        method: img2vid
+        prompt: 'Split screen: a UAV camera looks over a convoy; the feed passes through Encore (Vegazel) Real-Time Video Relay; a throughput gauge for VegaZL Very-High-Speed Data Transfer rises; a Shipborne Lightweight ESM/COMINT console shows signals deburdened and classified.'
+        duration_s: 5
+        narration: 'A sovereign data fabric—built on Indian relays, Indian links and Indian electronic sensing—turns information into awareness, and awareness into advantage.'
+      - id: r017
+        method: img2vid
+        prompt: 'Operator view: a secure waveform icon shows link health between platforms; the common operating picture aligns tracks, labels threat emissions and time-stamps the video feed.'
+        duration_s: 5
+        narration: 'When the picture is instantaneous and sovereign, the Fleet moves with confidence. This is Strength and Power through Innovation and Indigenisation.'
+      - id: r018
+        method: t2v
+        prompt: 'SECTION SLATE — Autonomy at Sea'
+        duration_s: 4
+        narration: 'Distributed. Persistent. Scalable.'
+      - id: r019
+        method: img2vid
+        prompt: 'At sea, a ring of Autonomous Weaponised Boat Swarms forms ahead of a task group; the boats weave into a skirmish line and hold station using coordinated guidance.'
+        duration_s: 5
+        narration: 'Autonomy at sea extends reach and resilience. Distributed effectors create layered security—few signatures, many dilemmas for an adversary.'
+      - id: r020
+        method: img2vid
+        prompt: 'In the littorals, an Autonomous Beach-Check Survey Device maps a surf zone; obstacles are flagged on a tablet as depth colours shift with each pass.'
+        duration_s: 5
+        narration: 'In the near shore, minutes matter. Fast, unmanned beach surveys reduce risk, compress timelines and prepare the way.'
+      - id: r021
+        method: t2v
+        prompt: 'SECTION SLATE — Aviation Safety & Ground Operations AI'
+        duration_s: 4
+        narration: 'Sortie safety, assured.'
+      - id: r022
+        method: t2v
+        prompt: 'An apron camera feed; the AI-based FOD Detection & Classification box flashes amber, then red; ground crew inspect and remove a metallic shard.'
+        duration_s: 5
+        narration: 'Artificial Intelligence on the flightline protects engines and aircrew. Incidents prevented never make news—but they save aircraft, time and life.'
+      - id: r023
+        method: img2vid
+        prompt: 'At night, a helicopter aligns for a shipborne recovery using GNSS 3‑D Approach; a guidance cue descends to the deck; touchdown is smooth.'
+        duration_s: 5
+        narration: 'Precise approach and landing cues, optimised for maritime motion, build confidence on the hardest nights.'
+      - id: r024
+        method: t2v
+        prompt: 'A small RPA fitted with a Lightweight ELINT/COMINT pod taxis; a console shows a clean geolocation fix of a training emitter.'
+        duration_s: 5
+        narration: 'Compact airborne sensing gives the Fleet flexible options—low-cost, high-utility sorties that enrich the maritime picture.'
+      - id: r025
+        method: t2v
+        prompt: 'SECTION SLATE — Acoustics & ASW Enablers'
+        duration_s: 4
+        narration: 'Find, fix, and train—indigenously.'
+      - id: r026
+        method: img2vid
+        prompt: 'Console view: 3‑D Forward Looking Sonar paints a harbour ingress; cable routes and obstructions are obvious in profile.'
+        duration_s: 5
+        narration: 'Forward-looking sonar de-risks passages where time is tight and margins are narrow.'
+      - id: r027
+        method: img2vid
+        prompt: 'Spectrogram before/after Adaptive Noise Cancellation on an AUV; clutter fades, targets stand up; similar effect on a shipborne sonar feed.'
+        duration_s: 5
+        narration: 'Adaptive processing cuts through the sea’s noise. Detection improves, effort reduces.'
+      - id: r028
+        method: img2vid
+        prompt: 'A coxswain deploys EMATT; a sonarman listens; the training run is logged with precise parameters. At a range, a Portable RCS Measuring Device calibrates a model for realism.'
+        duration_s: 4
+        narration: 'We train like we fight—on instruments we understand and can adapt.'
+      - id: r029
+        method: t2v
+        prompt: 'SECTION SLATE — Sensors & Silicon'
+        duration_s: 4
+        narration: 'From silicon to sky.'
+      - id: r030
+        method: t2v
+        prompt: 'Macro: AESA transmit–receive module and cooling plate; waveguide assembly; inspection light glints across the array surface.'
+        duration_s: 5
+        narration: 'Indigenous AESA gives the Fleet agility in air and surface surveillance—steerable beams, smart modes, and maintenance the Navy owns.'
+      - id: r031
+        method: t2v
+        prompt: 'An Electro‑Optical/IR Sensor Pod swivels under a wing; on a screen, IR and EO channels are fused; labels are crisp and stable.'
+        duration_s: 5
+        narration: 'Electro‑optical systems complement radar with identification and assessment—steady imagery, sovereign processing, results we trust.'
+      - id: r032
+        method: t2v
+        prompt: 'Bench: an ASIC Beamforming Radar board runs a test pattern; a small team watches a monitor with beam plots.'
+        duration_s: 5
+        narration: 'Custom silicon reduces size, power and weight; maritime sensors become smarter and more efficient.'
+      - id: r033
+        method: t2v
+        prompt: 'Rack: Airborne Lightweight COMINT equipment; a technician updates a threat library; a small aircraft lifts off.'
+        duration_s: 5
+        narration: 'Airborne COMINT extends the Navy’s ears where they are needed, without large footprints.'
+      - id: r034
+        method: t2v
+        prompt: 'SECTION SLATE — Positioning When GNSS Is Denied'
+        duration_s: 4
+        narration: 'Navigation assurance, by design.'
+      - id: r035
+        method: t2v
+        prompt: 'Night sky: an Automated Celestial Navigation unit tracks stars; on a repeater, a clean position fix appears alongside inertial estimates.'
+        duration_s: 5
+        narration: 'Celestial navigation returns with automation—quiet, precise, independent of external signals.'
+      - id: r036
+        method: img2vid
+        prompt: 'Graphic: Depth-based Positioning from a ship to a submarine; contours and pressure data resolve a fix; the submarine updates its track.'
+        duration_s: 5
+        narration: 'Depth and ocean data support submerged operations with reliable position updates when silence is essential.'
+      - id: r037
+        method: t2v
+        prompt: 'Lab: a Quantum Positioning System prototype mounted on a table; a stability plot scrolls; technicians confer quietly.'
+        duration_s: 5
+        narration: 'Quantum sensors point to a future where precision persists even when the sky is denied.'
+      - id: r038
+        method: t2v
+        prompt: 'SECTION SLATE — Harbour Turn-around & Shore Systems'
+        duration_s: 4
+        narration: 'Efficiency at harbour, power at sea.'
+      - id: r039
+        method: img2vid
+        prompt: 'Time-lapse alongside: Smart Retractable Cable Gangways reach and latch; Smart Mobile Units connect for Submarine Shore Supply and Charging; a Material Movement trolley transfers loads along a marked path.'
+        duration_s: 5
+        narration: 'Harbour efficiency is combat power in the next sortie. Safe connections and fast logistics compress turn-around.'
+      - id: r040
+        method: t2v
+        prompt: 'SECTION SLATE — Logistics & Persistent ISR'
+        duration_s: 4
+        narration: 'Endurance without excess.'
+      - id: r041
+        method: img2vid
+        prompt: 'A Heavy‑Lift Tethered Aerial Vehicle rises to mast height, holding a stable overwatch above a harbour entrance; the cable is taut, the image steady.'
+        duration_s: 5
+        narration: 'Tethered lift provides persistent eyes at fractional cost—hours of coverage, minimal crew burden.'
+      - id: r042
+        method: img2vid
+        prompt: 'On a rooftop, a Skydeck arm auto‑launches a small quadcopter; later, the same arm recovers and charges it for the next sortie.'
+        duration_s: 5
+        narration: 'Automated launch, recovery and charging allow small teams to sustain surveillance rhythms without fatigue.'
+      - id: r043
+        method: img2vid
+        prompt: 'An Autonomous Cargo Carrying Aerial Vehicle lifts a crate from a jetty and crosses to a ship at anchor; on another leg, the ARUN ultra‑endurance drone stretches a long patrol over sea lanes.'
+        duration_s: 4
+        narration: 'Agile lift and long‑range persistence multiply reach across fleet and shore.'
+      - id: r044
+        method: img2vid
+        prompt: 'SECTION SLATE — Special Operations & Deck‑Edge Aids'
+        duration_s: 4
+        narration: 'Precision at the edge.'
+      - id: r045
+        method: img2vid
+        prompt: 'A boarding team gears up; the Smart Reflex TT‑III sight is checked against a counter‑UAS drill; elsewhere, a programmable VT fuze warhead demonstrates a safe standoff burst against a target drone surrogate.'
+        duration_s: 5
+        narration: 'Close‑in precision and safe effects—tools tailored to littorals and boarding operations.'
+      - id: r046
+        method: t2v
+        prompt: 'A Special‑Ops Expendable Payload Delivery tube slides a compact package into the sea from a RHIB; GPS tag flashes green on a tablet.'
+        duration_s: 4
+        narration: 'Special operations demand quiet reach; compact delivery systems provide it.'
+      - id: r047
+        method: t2v
+        prompt: 'SECTION SLATE — Materials & Protective Systems'
+        duration_s: 4
+        narration: 'The maritime environment, engineered.'
+      - id: r048
+        method: t2v
+        prompt: 'A Moisture‑Wicking Hydrophobic Weapon Cover sheds spray under a nozzle test; nearby, Thermal/Ultrasonic Stealth Insulation panels show reduced signature on an IR camera.'
+        duration_s: 5
+        narration: 'Materials tuned for salt, heat and noise preserve performance and reduce detectability across missions.'
+      - id: r049
+        method: t2v
+        prompt: 'SECTION SLATE — The Working Forum'
+        duration_s: 4
+        narration: 'Where requirements become reality.'
+      - id: r050
+        method: t2v
+        prompt: 'Exhibition floor: capability name primary on clean title cards; firm name optional where cleared; Navy officers walk the aisles and ask precise questions; innovators note changes on clipboards.'
+        duration_s: 5
+        narration: 'Swavlamban is not only a seminar; it is a working forum. Requirements are clarified, prototypes refined, and pathways to induction agreed—with rigor and speed.'
+      - id: r051
+        method: t2v
+        prompt: 'Panel: Navy leadership with administrators, industry and academia in measured dialogue; no soundbites—only purposeful exchange; lower‑thirds identify speakers by role.'
+        duration_s: 5
+        narration: 'Clarity of need. Certainty of trial. Decisiveness of adoption. This culture is the Navy’s advantage.'
+      - id: r052
+        method: t2v
+        prompt: 'Quiet corridor: NIIO milestone wall; trial cards with signatures; acceptance notes placed into folders; a final document stamped.'
+        duration_s: 5
+        narration: 'Processes matter—transparent trials, sound engineering and planned sustainment ensure innovation endures at sea.'
+      - id: r053
+        method: img2vid
+        prompt: 'Recap montage: one exemplar from each niche flashes briefly—Aerogel Suit, AUV Nav track, Encore relay, Boat Swarm screen, FOD alert, Sonar profile, AESA tile, Celestial fix, Gangway latch, HLTAV mast, Boarding sight—then back to Manekshaw Centre at dusk.'
+        duration_s: 5
+        narration: 'From the flight deck to the engine room, from harbour wall to ocean floor—Aatmanirbharta advances, one delivered capability at a time.'
+      - id: r054
+        method: t2v
+        prompt: 'Final frame: Indian Navy crest; the Tricolour; the Swavlamban 2025 wordmark; gentle orchestral resolve and fade to black.'
+        duration_s: 6
+        narration: 'Swavlamban 2025—organised by the Naval Innovation & Indigenisation Organisation. Indian Navy—disciplined, deliberate, decisive. Jai Hind.'
+        overlay_text:
+          - 'SWAVLAMBAN 2025'
+          - 'STRENGTH & POWER THROUGH INNOVATION AND INDIGENISATION'
+          - 'नवाचार एवं स्वदेशीकरण से सशक्तिकरण'
+          - 'Organised by the Naval Innovation & Indigenisation Organisation (NIIO)'

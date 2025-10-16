@@ -1,0 +1,398 @@
+project:
+  title: Swavlamban 2025
+  venue: Manekshaw Centre
+  dates: 25–26 Nov 2025
+  fps: 30
+  voice: male
+  resolution: 4k
+  music_tag: ceremonial, dignified, 72 bpm
+scenes:
+- name: Opening
+  shots:
+  - row_no: 1
+    method: t2v
+    prompt: slow dissolve from black to the Indian Navy crest over the Tricolour with
+      a measured fade to the façade of Manekshaw Centre
+    duration_s: 7.0
+    narration: 'Narrator (measured, ceremonial): Swavlamban 2025—the Indian Navy’s
+      annual seminar and exhibition of innovation and indigenisation, organised by
+      the Naval Innovation & Indigenisation Organisation, NIIO. Strength and Power
+      through Innovation and Indigenisation… नवाचार एवं स्वदेशीकरण से सशक्तिकरण.'
+    overlay_text:
+    - SWAVLAMBAN 2025 · Manekshaw Centre · 25–26 Nov 2025
+    - STRENGTH & POWER THROUGH INNOVATION AND INDIGENISATION
+    - नवाचार एवं स्वदेशीकरण से सशक्तिकरण
+  - row_no: 2
+    method: img2vid
+    prompt: 'a dignified corridor walk-through: officers and sailors pass framed photographs
+      of ships, submarines and fleet exercises; exhibition signage reveals the floor
+      plan; ushers guide visitors'
+    duration_s: 5.4
+    narration: 'Here, India’s armed forces, engineers, scientists, startups and MSMEs—meet
+      with a single purpose: to turn ideas into operational capabilities for the Fleet.'
+  - row_no: 3
+    method: img2vid
+    prompt: montage of INS Vikrant under way; frigate at speed; a submarine slipping
+      beneath the surface; carrier deck operations; a destroyer launching a missile;
+      cut to labs and integration bays
+    duration_s: 6.0
+    narration: Aatmanirbharta at sea is not a slogan; it is a disciplined programme—clear
+      requirements, rigorous trials, and decisive adoption—so that the sailor at sea
+      receives what works, when it is needed.
+  - row_no: 4
+    method: img2vid
+    prompt: NIIO welcome desk; inaugural lamp-lighting; the exhibition opens; the
+      hall is ordered, calm, professional
+    duration_s: 5.4
+    narration: NIIO provides the Navy’s institutional framework to identify needs,
+      engage innovators and shepherd solutions from problem statement to pier-side
+      fitment.
+  - row_no: 5
+    method: t2v
+    prompt: minimal navy counter graphic highlighting programme metrics with restrained
+      animation
+    duration_s: 5.7
+    narration: 'Since inception, our journey is measured in outcomes: Acceptance of
+      Necessity sanctioned—₹2,744 crore; contracts concluded—₹1,457 crore. Cumulative,
+      deliberate, and real.'
+- name: 'Operational Readiness: Crew Safety & Damage Control'
+  shots:
+  - row_no: 6
+    method: t2v
+    prompt: 'navy blue title card for Operational Readiness: Crew Safety & Damage
+      Control'
+    duration_s: 4.5
+    narration: Lives protected. Readiness preserved.
+  - row_no: 7
+    method: img2vid
+    prompt: shipboard drill where crew in aerogel fire proximity suits deploy a thermal
+      drone and rugged dc ff torch inside smoke
+    duration_s: 5.8
+    narration: 'On the line between danger and duty, indigenous gear gives confidence:
+      suits that resist heat, optics that see through smoke, and tools designed for
+      gloved hands and rolling decks.'
+  - row_no: 8
+    method: img2vid
+    prompt: detail shots showing firefighting retrofit kit, cooling vest setup, and
+      portable hydraulic cutter in action
+    duration_s: 5.5
+    narration: Smart retrofits raise performance without changing core equipment.
+      Cooling vests shorten recovery. Hydraulic cutting saves precious minutes in
+      confined spaces.
+  - row_no: 9
+    method: img2vid
+    prompt: exhibition vignette with aerogel suits caged drone retrofit kits cooling
+      vests and hydraulic cutter on orderly plinths
+    duration_s: 4.9
+    narration: Designed for the sea. Built for the Fleet. Scaled for the Navy. These
+      are the quiet multipliers that preserve combat power.
+- name: Undersea Robotics & Subsea Enablers
+  shots:
+  - row_no: 10
+    method: t2v
+    prompt: navy blue title card for Undersea Robotics & Subsea Enablers
+    duration_s: 4.5
+    narration: Endurance and precision beneath the waves.
+  - row_no: 11
+    method: img2vid
+    prompt: auv departing a rhb with navigation overlay holding a precise bathymetry
+      track
+    duration_s: 5.4
+    narration: Underwater Navigation for AUVs brings reliable tracks in littorals
+      and harbours, enabling missions that demand precision over hours rather than
+      minutes.
+  - row_no: 12
+    method: img2vid
+    prompt: graphic showing underwater communication swarm with mission status updates
+      on shipboard screen
+    duration_s: 4.8
+    narration: Swarm communication ensures every node contributes to the mission—even
+      when the sea is noisy and the range is long.
+  - row_no: 13
+    method: img2vid
+    prompt: rov supervising hull inspection with tagged corrosion while diver monitors
+      nearby
+    duration_s: 5.0
+    narration: Underwater ROVs reduce risk and increase repeatability during inspection
+      and repair—every check logged, every anomaly recorded.
+  - row_no: 14
+    method: img2vid
+    prompt: submarine launching slxbt while operators review temperature profile and
+      voyage data recorder display
+    duration_s: 4.6
+    narration: Ocean data informs tactics. Voyage data captures truth. Together they
+      sharpen decision-making under water.
+- name: 'C4ISR: The Real-Time Maritime Picture'
+  shots:
+  - row_no: 15
+    method: t2v
+    prompt: navy blue title card for c4isr the real time maritime picture
+    duration_s: 4.8
+    narration: From sensors to decisions, in real time.
+  - row_no: 16
+    method: img2vid
+    prompt: split screen showing uav convoy feed via encore relay with vegazl throughput
+      gauge and shipboard esm console
+    duration_s: 5.4
+    narration: A sovereign data fabric—built on Indian relays, Indian links and Indian
+      electronic sensing—turns information into awareness, and awareness into advantage.
+  - row_no: 17
+    method: img2vid
+    prompt: common operating picture aligning tracks classifying threat emissions
+      and timestamping live video feed
+    duration_s: 6.4
+    narration: When the picture is instantaneous and sovereign, the Fleet moves with
+      confidence. This is Strength and Power through Innovation and Indigenisation.
+- name: Autonomy at Sea
+  shots:
+  - row_no: 18
+    method: t2v
+    prompt: navy blue title card for autonomy at sea
+    duration_s: 4.0
+    narration: Distributed. Persistent. Scalable.
+  - row_no: 19
+    method: img2vid
+    prompt: autonomous weaponised boats forming skirmish line ahead of naval task
+      group in open water
+    duration_s: 5.2
+    narration: Autonomy at sea extends reach and resilience. Distributed effectors
+      create layered security—few signatures, many dilemmas for an adversary.
+  - row_no: 20
+    method: img2vid
+    prompt: autonomous beach survey device mapping surf zone with tablet flagging
+      obstacles
+    duration_s: 4.8
+    narration: In the near shore, minutes matter. Fast, unmanned beach surveys reduce
+      risk, compress timelines and prepare the way.
+- name: Aviation Safety & Ground Operations AI
+  shots:
+  - row_no: 21
+    method: t2v
+    prompt: navy blue title card for aviation safety and ground operations ai
+    duration_s: 4.0
+    narration: Sortie safety, assured.
+  - row_no: 22
+    method: img2vid
+    prompt: flightline camera detecting fod as ground crew remove metallic shard
+    duration_s: 5.3
+    narration: Artificial Intelligence on the flightline protects engines and aircrew.
+      Incidents prevented never make news—but they save aircraft, time and life.
+  - row_no: 23
+    method: img2vid
+    prompt: nighttime helicopter recovering to ship using gnss 3d guidance cues
+    duration_s: 5.7
+    narration: Precise approach and landing cues, optimised for maritime motion, build
+      confidence on the hardest nights.
+  - row_no: 24
+    method: img2vid
+    prompt: lightweight elint comint pod on small rpa with console confirming geolocation
+    duration_s: 4.9
+    narration: Compact airborne sensing gives the Fleet flexible options—low-cost,
+      high-utility sorties that enrich the maritime picture.
+- name: Acoustics & ASW Enablers
+  shots:
+  - row_no: 25
+    method: t2v
+    prompt: navy blue title card for acoustics and asw enablers
+    duration_s: 4.0
+    narration: Find, fix, and train—indigenously.
+  - row_no: 26
+    method: img2vid
+    prompt: forward looking sonar display revealing harbour ingress with obstructions
+    duration_s: 4.2
+    narration: Forward-looking sonar de-risks passages where time is tight and margins
+      are narrow.
+  - row_no: 27
+    method: img2vid
+    prompt: adaptive noise cancellation spectrogram clarifying sonar targets
+    duration_s: 4.2
+    narration: Adaptive processing cuts through the sea’s noise. Detection improves,
+      effort reduces.
+  - row_no: 28
+    method: img2vid
+    prompt: ematt training deployment with portable rcs measurement logging parameters
+    duration_s: 4.0
+    narration: We train like we fight—on instruments we understand and can adapt.
+- name: Sensors & Silicon
+  shots:
+  - row_no: 29
+    method: t2v
+    prompt: navy blue title card for sensors and silicon
+    duration_s: 4.0
+    narration: From silicon to sky.
+  - row_no: 30
+    method: img2vid
+    prompt: macro of indigenous aesa module, cooling plate, and inspection light
+    duration_s: 5.0
+    narration: Indigenous AESA gives the Fleet agility in air and surface surveillance—steerable
+      beams, smart modes, and maintenance the Navy owns.
+  - row_no: 31
+    method: img2vid
+    prompt: electro optical ir sensor pod under wing delivering fused labelled imagery
+    duration_s: 5.0
+    narration: Electro‑optical systems complement radar with identification and assessment—steady
+      imagery, sovereign processing, results we trust.
+  - row_no: 32
+    method: img2vid
+    prompt: asic beamforming radar bench test monitored by engineers
+    duration_s: 4.5
+    narration: Custom silicon reduces size, power and weight; maritime sensors become
+      smarter and more efficient.
+  - row_no: 33
+    method: img2vid
+    prompt: airborne lightweight comint rack updated before aircraft sortie
+    duration_s: 4.3
+    narration: Airborne COMINT extends the Navy’s ears where they are needed, without
+      large footprints.
+- name: Positioning When GNSS Is Denied
+  shots:
+  - row_no: 34
+    method: t2v
+    prompt: navy blue title card for positioning when gnss is denied
+    duration_s: 4.0
+    narration: Navigation assurance, by design.
+  - row_no: 35
+    method: t2v
+    prompt: automated celestial navigation unit tracking stars with repeater showing
+      position fix
+    duration_s: 4.4
+    narration: Celestial navigation returns with automation—quiet, precise, independent
+      of external signals.
+  - row_no: 36
+    method: t2v
+    prompt: depth based positioning graphic syncing ship and submarine tracks
+    duration_s: 4.6
+    narration: Depth and ocean data support submerged operations with reliable position
+      updates when silence is essential.
+  - row_no: 37
+    method: img2vid
+    prompt: quantum positioning prototype on lab table with stability plot
+    duration_s: 4.3
+    narration: Quantum sensors point to a future where precision persists even when
+      the sky is denied.
+- name: Harbour Turn-around & Shore Systems
+  shots:
+  - row_no: 38
+    method: t2v
+    prompt: navy blue title card for harbour turn around and shore systems
+    duration_s: 4.0
+    narration: Efficiency at harbour, power at sea.
+  - row_no: 39
+    method: img2vid
+    prompt: time lapse showing smart retractable gangways shore supply units and logistics
+      trolley servicing submarine
+    duration_s: 4.7
+    narration: Harbour efficiency is combat power in the next sortie. Safe connections
+      and fast logistics compress turn-around.
+- name: Logistics & Persistent ISR
+  shots:
+  - row_no: 40
+    method: t2v
+    prompt: navy blue title card for logistics and persistent isr
+    duration_s: 4.0
+    narration: Endurance without excess.
+  - row_no: 41
+    method: img2vid
+    prompt: heavy lift tethered aerial vehicle holding steady overwatch above harbour
+      entrance
+    duration_s: 4.5
+    narration: Tethered lift provides persistent eyes at fractional cost—hours of
+      coverage, minimal crew burden.
+  - row_no: 42
+    method: img2vid
+    prompt: skydeck arm autonomously launching and recovering quadcopter between sorties
+    duration_s: 5.7
+    narration: Automated launch, recovery and charging allow small teams to sustain
+      surveillance rhythms without fatigue.
+  - row_no: 43
+    method: img2vid
+    prompt: autonomous cargo drone lifting crate to anchored ship then flying endurance
+      patrol
+    duration_s: 4.1
+    narration: Agile lift and long‑range persistence multiply reach across fleet and
+      shore.
+- name: Special Operations & Deck‑Edge Aids
+  shots:
+  - row_no: 44
+    method: t2v
+    prompt: navy blue title card for special operations and deck edge aids
+    duration_s: 4.0
+    narration: Precision at the edge.
+  - row_no: 45
+    method: img2vid
+    prompt: boarding team readying smart reflex sight while vt fuze warhead demonstrates
+      standoff burst
+    duration_s: 4.3
+    narration: Close‑in precision and safe effects—tools tailored to littorals and
+      boarding operations.
+  - row_no: 46
+    method: t2v
+    prompt: special ops expendable payload delivery tube releasing package from rhb
+      with gps confirmation
+    duration_s: 4.1
+    narration: Special operations demand quiet reach; compact delivery systems provide
+      it.
+- name: Materials & Protective Systems
+  shots:
+  - row_no: 47
+    method: t2v
+    prompt: navy blue title card for materials and protective systems
+    duration_s: 4.0
+    narration: The maritime environment, engineered.
+  - row_no: 48
+    method: img2vid
+    prompt: hydrophobic weapon cover shedding spray beside stealth insulation showing
+      reduced ir signature
+    duration_s: 4.5
+    narration: Materials tuned for salt, heat and noise preserve performance and reduce
+      detectability across missions.
+- name: The Working Forum
+  shots:
+  - row_no: 49
+    method: t2v
+    prompt: navy blue title card for the working forum
+    duration_s: 5.0
+    narration: Where requirements become reality.
+  - row_no: 50
+    method: t2v
+    prompt: exhibition floor with capability title cards and officers engaging innovators
+    duration_s: 5.5
+    narration: Swavlamban is not only a seminar; it is a working forum. Requirements
+      are clarified, prototypes refined, and pathways to induction agreed—with rigor
+      and speed.
+  - row_no: 51
+    method: t2v
+    prompt: panel discussion with navy leadership industry and academia identified
+      by role
+    duration_s: 4.5
+    narration: Clarity of need. Certainty of trial. Decisiveness of adoption. This
+      culture is the Navy’s advantage.
+  - row_no: 52
+    method: t2v
+    prompt: quiet niio corridor displaying milestone wall signed trial cards and stamped
+      documents
+    duration_s: 4.7
+    narration: Processes matter—transparent trials, sound engineering and planned
+      sustainment ensure innovation endures at sea.
+- name: Finale
+  shots:
+  - row_no: 53
+    method: img2vid
+    prompt: montage highlighting capability exemplars before returning to manekshaw
+      centre at dusk
+    duration_s: 5.1
+    narration: From the flight deck to the engine room, from harbour wall to ocean
+      floor—Aatmanirbharta advances, one delivered capability at a time.
+  - row_no: 54
+    method: t2v
+    prompt: formal closing frame showing indian navy crest the tricolour and swavlamban
+      2025 wordmark
+    duration_s: 6.0
+    narration: Swavlamban 2025—organised by the Naval Innovation & Indigenisation
+      Organisation.  Strength and Power through Innovation and Indigenisation… नवाचार
+      एवं स्वदेशीकरण से सशक्तिकरण. Jai Hind.
+    overlay_text:
+    - SWAVLAMBAN 2025 · Manekshaw Centre · 25–26 Nov 2025
+    - STRENGTH & POWER THROUGH INNOVATION AND INDIGENISATION
+    - नवाचार एवं स्वदेशीकरण से सशक्तिकरण
+    - Organised by the Naval Innovation & Indigenisation Organisation (NIIO)

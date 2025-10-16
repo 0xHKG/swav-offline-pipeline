@@ -1,0 +1,6 @@
+stabilityai/stable-diffusion-xl-base-1.0 -> models/sdxl-base
+stabilityai/stable-video-diffusion-img2vid-xt -> models/svd-img2vid
+coqui/XTTS-v2 -> models/xtts-v2
+facebook/musicgen-small -> models/musicgen-small (optional)
+Real-ESRGAN weights (optional) -> models/realesrgan
+RIFE interpolation weights (optional) -> models/rife
